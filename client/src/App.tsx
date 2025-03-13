@@ -70,11 +70,8 @@ function App() {
                   <td>{e.full_name}</td>
                   <td>{e.country}</td>
                   <td>{e.total_bets}</td>
-                  <td>{e.win_rate} %</td>
-                  <td>
-                    {"\u20AC"}
-                    {e.profit}
-                  </td>
+                  <td>{e.total_bets > 0 ? `${e.win_rate} %` : "-"}</td>
+                  <td>{e.total_bets > 0 ? `\u20AC ${e.profit}` : "-"}</td>
                 </tr>
               ))
             ) : (
