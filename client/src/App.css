@@ -21,3 +21,38 @@
 .read-the-docs {
   color: #888;
 }
+
+.filter {
+  margin: 20px 10px;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+thead th {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 2px solid #ddd;
+}
+
+thead th:nth-child(n + 3),
+tbody td:nth-child(n + 3) {
+  text-align: right;
+}
+
+tbody td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr td[colspan="5"] {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+}
