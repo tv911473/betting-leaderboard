@@ -27,28 +27,63 @@
   text-align: left;
 }
 
+.App {
+  margin-top: 2cm;
+  min-height: calc(100vh - 2cm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leaderboard {
+  width: 600px;
+  max-width: 800px;
+}
+
 table {
   width: 100%;
   max-width: 800px;
   border-collapse: collapse;
   margin: 20px auto;
+  table-layout: fixed;
 }
 
 thead th {
   text-align: left;
   padding: 12px;
   border-bottom: 2px solid #ddd;
-}
-
-thead th:nth-child(n + 3),
-tbody td:nth-child(n + 3) {
-  text-align: right;
+  white-space: nowrap;
 }
 
 tbody td {
   text-align: left;
   padding: 10px 12px;
+  white-space: nowrap;
   border-bottom: 1px solid #ddd;
+}
+
+/* Table Full name column */
+thead th:nth-child(1),
+tbody td:nth-child(1) {
+  width: 35%;
+  max-width: 200px;
+  overflow: hidden;
+}
+
+/* Table Country column */
+thead th:nth-child(2),
+tbody td:nth-child(2) {
+  width: 16%;
+  max-width: 150px;
+  overflow: hidden;
+}
+
+/* Table last 3 columns */
+thead th:nth-child(n + 3),
+tbody td:nth-child(n + 3) {
+  text-align: right;
+  width: 16.33%;
+  min-width: 80px;
 }
 
 tbody tr td[colspan="5"] {

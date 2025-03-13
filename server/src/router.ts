@@ -4,15 +4,15 @@ import { getBets } from "./db/queries/bet";
 
 export const router = Router();
 
-// router.get("/customers", async (_req, res) => {
-//   const customers = await getCustomers();
-//   res.json(customers);
-// });
+router.get("/customers", async (_req, res) => {
+  const customers = await getCustomers();
+  res.json(customers);
+});
 
-// router.get("/bets", async (_req, res) => {
-//   const bets = await getBets();
-//   res.json(bets);
-// });
+router.get("/bets", async (_req, res) => {
+  const bets = await getBets();
+  res.json(bets);
+});
 
 router.get("/countries", async (_req, res) => {
   try {
