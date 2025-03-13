@@ -77,7 +77,7 @@ function App() {
             ) : (
               <tr>
                 <td colSpan={5}>
-                  Oops, only poor people{" "}
+                  Oops, no winners{" "}
                   {selectCountry ? `in ${selectCountry}` : "on earth"}!
                 </td>
               </tr>
